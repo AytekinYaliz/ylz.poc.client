@@ -1,0 +1,62 @@
+@import './resources/styles/colors.scss';
+
+body {
+   background-color: $body-background-color;
+}
+
+.app {
+   background-color: $body-background-color;
+   height: 100vh;
+   // text-align: center;
+}
+
+
+.left {
+   float: left;
+}
+.right {
+   float: right;
+}
+.center {
+   text-align: center;
+}
+.pointable {
+   cursor: pointer;
+}
+
+// react-table
+$react-table-footer-height: 50px;
+.ReactTable {
+   .rt-thead {
+      .rt-th {
+         font-weight: bold;
+      }
+   }
+   .rt-tbody {
+      .rt-td {
+         position: relative;
+
+         .customCell {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            // margin-top: -7px;
+            padding: 10px 0;
+            // font-size: 14px;
+         }
+      }
+   }
+   .pagination-bottom {
+      height: ($react-table-footer-height)-12;
+
+      button {
+         height: ($react-table-footer-height - 20) !important;
+      }
+
+      .-pageJump {
+         input {
+            padding: 2px 3px;
+         }
+      }
+   }
+}

@@ -1,0 +1,24 @@
+[ignore]
+./build/.*
+./node_modules/.*
+./_HSBC/.*
+_HSBC
+/_HSBC
+
+[include]
+./src/.*
+
+[libs]
+./flow-typed/
+
+[lints]
+
+[options]
+# [flow] ./App.scss. Required module not found ERROR..
+module.file_ext=.js
+module.file_ext=.jsx
+module.file_ext=.css
+module.file_ext=.scss
+module.file_ext=.json
+
+[strict]
